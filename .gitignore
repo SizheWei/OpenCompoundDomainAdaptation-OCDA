@@ -9,3 +9,4 @@ logs
 /data
 source.sh
 *.idea*
+datasets

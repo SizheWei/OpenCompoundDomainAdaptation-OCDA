@@ -12,7 +12,7 @@ import numpy as np
 import yaml
 from os.path import join
 from argparse import ArgumentParser
-
+# https://docs.python.org/zh-cn/3/library/argparse.html
 from source.algorithms.utils import compute_source_centroids
 from source.algorithms.train_source_net import train_source
 from source.algorithms.train_mann_net import train_mann_multi
@@ -31,7 +31,7 @@ def main(args):
     ##################
     # set gpu
     if args.gpu is not None:
-        os.environ['CUDA_VISIBLE_DEVICES'] = str(args.gpu)
+        os.environ[a] = str(args.gpu)
 
     # read configuration
     np.random.seed(4325)
