@@ -49,7 +49,7 @@ def train_epoch(loader, net, opt_net, epoch):
             acc = correct / len(pred) * 100.0
             print('  Acc: {:.2f}'.format(acc))
 
-
+# TODO: Know Arch Here:
 def train_source(args):
 
     """Train a classification net and evaluate on test set."""
